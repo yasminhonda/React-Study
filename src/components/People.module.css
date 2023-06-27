@@ -68,3 +68,60 @@
     width: 10%;
     margin-top: 2rem;
 }
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.carregando {
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.saber{
+    width: 15rem;
+    height: 2rem;
+    border-radius: 3rem 0 0 3rem;
+    background-color: rgb(122, 122, 122);
+}
+
+.saber::before {
+    display: flex;
+    content: '';
+    transform: translate(15rem);
+    width: 40rem;
+    height: 2rem;
+    border-radius: 0 3rem 3rem 0;
+    background: linear-gradient(90deg, red, rgb(0, 26, 255), rgb(63, 255, 63), rgb(255, 5, 255), red);
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    inset: 0;
+}
+
+.saber::after {
+    position: absolute;
+    left: 2%;
+    top: 1rem;
+    content: '';
+    transform: translate(15rem);
+    width: 40rem;
+    height: 2rem;
+    border-radius: 0 3rem 3rem 0;
+    background: linear-gradient(90deg, red, rgb(0, 26, 255), rgb(63, 255, 63), rgb(255, 5, 255), red);
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    0% {
+        background-position: 500% 0;
+    }
+}

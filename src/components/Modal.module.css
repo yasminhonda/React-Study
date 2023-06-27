@@ -1,0 +1,42 @@
+.container {
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    box-shadow: 2rem 2rem 5rem rgba(255, 255, 84, 0.267);
+    background: rgba(52, 52, 52, 0.137);
+    border-top: 1px solid rgb(255, 255, 84, 0.5);
+    border-left: 1px solid rgb(255, 255, 84, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 2rem;
+    padding: 2rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: 'Star Wars', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.info {
+    text-align: left;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 2rem;
+}
+
+.btn:hover {
+    background-color: rgb(210, 210, 20);
+    color: white;
+    font-weight: bold;
+}
